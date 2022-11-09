@@ -1,2 +1,2 @@
 # GUIDES
-Quick guides on a variety of tools
+Quick tutorials and links to documentations on a variety of tools. 
