@@ -1,8 +1,12 @@
-# Quick Guide for Python 
+# Quick Guide for using Python 
 
 ## Main issues 
 
 We are likely to have several instances of python in our PC. We need to ensure we know in which one we are working. A light IDE like Spyder (like Rstudio) seems to work best. We can download Anaconda 3 containing a version of Python (as well as the package manager conda among other software). From there we can create environments in which we will install packages. Then launch the Spyder from a given environment. Issues during installation included problems with spyder recognizing the right python version or not recognizing the 'conda' command (e.g., because Anaconda folders were not added in the OS path). PIP is another package manager. Recommended to stick to conda for installing packages whenever possible.  
+
+There are many ways. This is just one I found simple enough. It requires:
+-Anaconda3
+-Spyder
 
 ## Basic setup
 Main documentation: https://docs.spyder-ide.org/current/installation.html  
