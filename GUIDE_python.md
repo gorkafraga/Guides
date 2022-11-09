@@ -1,12 +1,13 @@
 # Quick Guide for using Python 
 
-## Main issues 
-
-We are likely to have several instances of python in our PC. We need to ensure we know in which one we are working. A light IDE like Spyder (like Rstudio) seems to work best. We can download Anaconda 3 containing a version of Python (as well as the package manager conda among other software). From there we can create environments in which we will install packages. Then launch the Spyder from a given environment. Issues during installation included problems with spyder recognizing the right python version or not recognizing the 'conda' command (e.g., because Anaconda folders were not added in the OS path). PIP is another package manager. Recommended to stick to conda for installing packages whenever possible.  
+We are likely to have multiple instances of python in our PC. We need to ensure we know which one we are using.
 
 There are many ways. This is just one I found simple enough. It requires:
--Anaconda3
--Spyder
+ - Anaconda3 (python environment control)
+ - Spyder (IDE)
+
+We can download Anaconda 3, from there create environments with a python version and different modules (packages). Then we launch a light IDE like Spyder (similar to Rstudio) from a given environment. 
+
 
 ## Basic setup
 Main documentation: https://docs.spyder-ide.org/current/installation.html  
@@ -71,9 +72,12 @@ https://medium.datadriveninvestor.com/what-is-pip-conda-anaconda-spyder-jupyter-
 https://google.github.io/styleguide/pyguide.html  
 
 ## Troubleshooting  
-Spyder is not showing plotly plots? Set up the default renderer:  
+* Issues during installation included problems with spyder recognizing the right python version or not recognizing the 'conda' command (e.g., because Anaconda folders were not added in the OS path). PIP is another package manager. Recommended to stick to conda for installing packages whenever possible.  
+
+* Spyder is not showing plotly plots? Set up the default renderer:  
    import plotly.io as io 
    io.renderers.default='browser' 
+
 
  
 
