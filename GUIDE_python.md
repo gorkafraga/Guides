@@ -1,4 +1,4 @@
-# Quick Guide for using Python 
+# Quick Guide for Python 
 
 We are likely to have multiple instances of python in our PC. We need to ensure we know which one we are using.
 
