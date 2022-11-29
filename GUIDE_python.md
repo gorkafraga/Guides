@@ -70,9 +70,10 @@ https://medium.datadriveninvestor.com/what-is-pip-conda-anaconda-spyder-jupyter-
 https://google.github.io/styleguide/pyguide.html  
 
 ## Troubleshooting  
-* Issues during installation included problems with spyder recognizing the right python version or not recognizing the 'conda' command (e.g., because Anaconda folders were not added in the OS path). PIP is another package manager. Recommended to stick to conda for installing packages whenever possible.  
+> Issues during installation included problems with spyder recognizing the right python version or not recognizing the 'conda' command (e.g., because Anaconda folders were not added in the OS path). PIP is another package manager. Recommended to stick to conda for installing packages whenever possible.  
 
-* Spyder is not showing plotly plots? Set up the default renderer:  
+
+> Spyder is not showing plotly plots? Set up the default renderer:  
    import plotly.io as io 
    io.renderers.default='browser' 
 
