@@ -12,9 +12,8 @@ We can download Anaconda 3, from there create environments with a python version
 ## Basic setup
 Main documentation: https://docs.spyder-ide.org/current/installation.html  
 
-* Download and install **Anaconda3** 
-
-* (If WINDOWS: Set environment variables. Add to PATH: Anaconda3, Anaconda3/Scripts and Anaconda3/Library/bin folder ) 
+* **Download and install Anaconda3** 
+ (If using WINDOWS: Set environment variables. Add to PATH: Anaconda3, Anaconda3/Scripts and Anaconda3/Library/bin folder ) 
 
 * **Check installation** : Open the command prompt and type something like: ```conda info --envs```
 
@@ -27,9 +26,8 @@ Main documentation: https://docs.spyder-ide.org/current/installation.html
 * **Activate** environment in the prompt  
 ```conda activate spyder-env ```
 Now the console prompt should have changed indicating you are within the created environment spyder-env. 
-Whatever we do know will affect only that environment 
-
-* WARNING: Anaconda3 comes with some *base* environment. Do NOT install stuff in there. Create your own environments, activate them and only within those environment mess around with conda or PIP installation of modules. 
+Whatever we do know will affect only that environment.\
+WARNING: Anaconda3 comes with some *base* environment. Do NOT install stuff in there. Create your own environments, activate them and only within those environment mess around with conda or PIP installation of modules. 
 
 * **Launch spyder** 
 Type 'Spyder' to launch spyder from wihin this environment.
