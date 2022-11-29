@@ -47,7 +47,7 @@ Imagine you created an environment in one computer and you want now to run those
 https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment 
 * Create an environment: specify python version 
 * Export your environment:  e.g., conda env export > spyder-env.yml --from-history
-* Import: 
+* Import (...)  
 
 
 
