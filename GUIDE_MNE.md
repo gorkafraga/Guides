@@ -29,3 +29,6 @@ The MVPA analysis is based on the code provided in: https://github.com/BayetLab/
  
  - Check this code to use PSD plots for spotting bad channels  -   https://github.com/mne-tools/mne-biomag-group-demo/blob/master/scripts/results/demos/plot_psd.py
 
+## Multivariate pattern analysis 
+https://natmeg.se/mne_multivariate/mne_multivariate.html
+      
