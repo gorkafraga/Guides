@@ -1,5 +1,5 @@
 # Quick Guide for Python 
-
+Additional documentation: https://google.github.io/styleguide/pyguide.html  
 We are likely to have multiple instances of python in our PC. We need to ensure we know which one we are using.
 
 There are many ways. This is just one I found simple enough. It requires:
@@ -12,9 +12,8 @@ We can download Anaconda 3, from there create environments with a python version
 ## Basic setup
 Main documentation: https://docs.spyder-ide.org/current/installation.html  
 
-* Download and install **Anaconda3** 
-
-* (If WINDOWS: Set environment variables. Add to PATH: Anaconda3, Anaconda3/Scripts and Anaconda3/Library/bin folder ) 
+* **Download and install Anaconda3** 
+ (If using WINDOWS: Set environment variables. Add to PATH: Anaconda3, Anaconda3/Scripts and Anaconda3/Library/bin folder ) 
 
 * **Check installation** : Open the command prompt and type something like: ```conda info --envs```
 
@@ -27,9 +26,8 @@ Main documentation: https://docs.spyder-ide.org/current/installation.html
 * **Activate** environment in the prompt  
 ```conda activate spyder-env ```
 Now the console prompt should have changed indicating you are within the created environment spyder-env. 
-Whatever we do know will affect only that environment 
-
-* WARNING: Anaconda3 comes with some *base* environment. Do NOT install stuff in there. Create your own environments, activate them and only within those environment mess around with conda or PIP installation of modules. 
+Whatever we do know will affect only that environment.\
+WARNING: Anaconda3 comes with some *base* environment. Do NOT install stuff in there. Create your own environments, activate them and only within those environment mess around with conda or PIP installation of modules. 
 
 * **Launch spyder** 
 Type 'Spyder' to launch spyder from wihin this environment.
@@ -49,7 +47,7 @@ Imagine you created an environment in one computer and you want now to run those
 https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment 
 * Create an environment: specify python version 
 * Export your environment:  e.g., conda env export > spyder-env.yml --from-history
-* Import: 
+* Import (...)  
 
 
 
@@ -68,13 +66,12 @@ Anaconda =  Python distributor with multiple programs
 https://medium.datadriveninvestor.com/what-is-pip-conda-anaconda-spyder-jupyter-notebook-pycharm-pandas-tensorflow-and-django-36d54778d85c 
 
  
-## Additional Resources 
-https://google.github.io/styleguide/pyguide.html  
 
 ## Troubleshooting  
-* Issues during installation included problems with spyder recognizing the right python version or not recognizing the 'conda' command (e.g., because Anaconda folders were not added in the OS path). PIP is another package manager. Recommended to stick to conda for installing packages whenever possible.  
+> Issues during installation included problems with spyder recognizing the right python version or not recognizing the 'conda' command (e.g., because Anaconda folders were not added in the OS path). PIP is another package manager. Recommended to stick to conda for installing packages whenever possible.  
 
-* Spyder is not showing plotly plots? Set up the default renderer:  
+
+> Spyder is not showing plotly plots? Set up the default renderer:  
    import plotly.io as io 
    io.renderers.default='browser' 
 

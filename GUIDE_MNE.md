@@ -12,7 +12,7 @@ The MVPA analysis is based on the code provided in: https://github.com/BayetLab/
 - Read epoched data: 
       `epochs = mne.io.read_epochs_eeglab('s9_DiN_epoched_ICrem.set')`
  
- - In our case , the info of interest, i.e., accuracy of each trial was encoded in EEG.epochs.accuracy in the eeglab data set. We were not able to directly access this in the output of mne.io.read_epochs_eeglab. However this info was preserved if we read the .set file  using loadmat so we did: 
+ - **EXAMPLE from DiN study**. In our case , the info of interest, i.e., accuracy of each trial was encoded in EEG.epochs.accuracy in the eeglab data set. We were not able to directly access this in the output of mne.io.read_epochs_eeglab. However this info was preserved if we read the .set file  using loadmat so we did: 
   `# Retrieve trial accuracy
           mdat = sio.loadmat(fileinput,squeeze_me = True,simplify_cells = True,mat_dtype=True)['EEG']
           epochAccu = [epoch['accuracy'] for epoch in mdat['epoch']]
@@ -25,4 +25,10 @@ The MVPA analysis is based on the code provided in: https://github.com/BayetLab/
           event_dict = {'correct': 1, 'incorrect':0}
           epochs.event_id = event_dict
  `
- ## Visualizing 
+ ## Quality assesment and visualizations Visualizing 
+ 
+ - Check this code to use PSD plots for spotting bad channels  -   https://github.com/mne-tools/mne-biomag-group-demo/blob/master/scripts/results/demos/plot_psd.py
+
+## Multivariate pattern analysis 
+https://natmeg.se/mne_multivariate/mne_multivariate.html
+      
